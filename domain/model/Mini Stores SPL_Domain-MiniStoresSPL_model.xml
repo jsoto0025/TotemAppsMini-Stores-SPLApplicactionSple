@@ -53,12 +53,12 @@
         <mxGeometry x="540" y="50" width="100" height="40" as="geometry"/>
       </mxCell>
     </component>
-    <file label="Product-Model" type="file" filename="Product.java" destination="Product.java" id="11">
+    <file label="Product-Model" type="file" filename="Product.java" destination="src/Product.java" id="11">
       <mxCell style="shape=file" parent="component" vertex="1">
         <mxGeometry x="390" y="140" width="100" height="40" as="geometry"/>
       </mxCell>
     </file>
-    <file label="Index-Control" type="file" filename="Index.java" destination="Index.java" id="12">
+    <file label="Index-Control" type="file" filename="Index.java" destination="src/Index.java" id="12">
       <mxCell style="shape=file" parent="component" vertex="1">
         <mxGeometry x="100" y="80" width="100" height="40" as="geometry"/>
       </mxCell>
