@@ -6,11 +6,8 @@ public class Index {
 		/*ECP-store-name*/
 		System.out.println("Check the new product:");
 		/*B-productobject*/
-
-/*Code replaced by: ProductStar-AlterIndex*/
-Product p1=new Product(1,"TV 50",100,5);
-/*Code replaced by: ProductStar-AlterIndex*/
-/*E-productobject*/
+		Product p1=new Product(1,"TV 50",100);
+		/*E-productobject*/
 		System.out.println(p1.getName() + " - price " + p1.getPrice());
 	}
 }

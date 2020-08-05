@@ -2,41 +2,41 @@
   <root>
     <mxCell id="0"/>
     <mxCell id="feature" parent="0"/>
-    <root label="MiniStores" type="root" id="1">
-      <mxCell style="" parent="feature" vertex="1">
-        <mxGeometry x="360" y="40" width="100" height="35" as="geometry"/>
+    <root label="MiniStores" type="root" id="27">
+      <mxCell style="strokeWidth=3" vertex="1" parent="feature">
+        <mxGeometry x="336" y="47.5" width="100" height="35" as="geometry"/>
       </mxCell>
     </root>
-    <leaf label="Product Star" type="leaf" selected="true" id="2">
-      <mxCell style="" parent="feature" vertex="1">
-        <mxGeometry x="540" y="130" width="100" height="35" as="geometry"/>
+    <concrete label="Index" type="concrete" selected="true" id="28">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="192" y="154" width="100" height="35" as="geometry"/>
       </mxCell>
-    </leaf>
-    <leaf label="Index" type="leaf" selected="true" id="3">
-      <mxCell style="" parent="feature" vertex="1">
-        <mxGeometry x="190" y="130" width="100" height="35" as="geometry"/>
+    </concrete>
+    <concrete label="Product" type="concrete" selected="false" id="29">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="337.5" y="152" width="100" height="35" as="geometry"/>
       </mxCell>
-    </leaf>
-    <leaf label="Product" type="leaf" selected="true" id="4">
-      <mxCell style="" parent="feature" vertex="1">
-        <mxGeometry x="360" y="130" width="100" height="35" as="geometry"/>
+    </concrete>
+    <concrete label="Product Star" type="concrete" selected="false" id="30">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="490" y="150" width="100" height="35" as="geometry"/>
       </mxCell>
-    </leaf>
-    <rel_leaf_root type="relation" relType="mandatory" id="5">
-      <mxCell parent="feature" source="3" target="1" edge="1">
+    </concrete>
+    <rel_concrete_root type="relation" relType="mandatory" id="31">
+      <mxCell edge="1" parent="feature" source="28" target="27">
         <mxGeometry relative="1" as="geometry"/>
       </mxCell>
-    </rel_leaf_root>
-    <rel_leaf_root type="relation" relType="mandatory" id="6">
-      <mxCell parent="feature" source="4" target="1" edge="1">
+    </rel_concrete_root>
+    <rel_concrete_root type="relation" relType="mandatory" id="32">
+      <mxCell edge="1" parent="feature" source="29" target="27">
         <mxGeometry relative="1" as="geometry"/>
       </mxCell>
-    </rel_leaf_root>
-    <rel_leaf_root type="relation" relType="optional" id="7">
-      <mxCell parent="feature" source="2" target="1" edge="1">
+    </rel_concrete_root>
+    <rel_concrete_root type="relation" relType="mandatory" id="33">
+      <mxCell edge="1" parent="feature" source="30" target="27">
         <mxGeometry relative="1" as="geometry"/>
       </mxCell>
-    </rel_leaf_root>
+    </rel_concrete_root>
     <mxCell id="component" parent="0" visible="0"/>
     <component label="Index" type="component" id="8">
       <mxCell style="shape=component" parent="component" vertex="1">
@@ -75,7 +75,7 @@
     </file>
     <file label="ProductStar-AlterProduct" type="file" filename="alterProduct.frag" destination="" id="15">
       <mxCell style="shape=file" parent="component" vertex="1">
-        <mxGeometry x="700" y="60" width="100" height="40" as="geometry"/>
+        <mxGeometry x="672" y="139.5" width="100" height="40" as="geometry"/>
       </mxCell>
     </file>
     <rel_file_component type="relation" id="16">
@@ -104,21 +104,6 @@
       </mxCell>
     </rel_file_component>
     <mxCell id="binding_feature_component" parent="0" visible="0"/>
-    <leaf label="Product Star" type="leaf" selected="true" id="clon2">
-      <mxCell style="fillColor=#DCDCDC;" parent="binding_feature_component" vertex="1">
-        <mxGeometry x="240" y="120" width="100" height="35" as="geometry"/>
-      </mxCell>
-    </leaf>
-    <leaf label="Index" type="leaf" selected="true" id="clon3">
-      <mxCell style="fillColor=#DCDCDC;" parent="binding_feature_component" vertex="1">
-        <mxGeometry x="410" y="120" width="100" height="35" as="geometry"/>
-      </mxCell>
-    </leaf>
-    <leaf label="Product" type="leaf" selected="true" id="clon4">
-      <mxCell style="fillColor=#DCDCDC;" parent="binding_feature_component" vertex="1">
-        <mxGeometry x="580" y="120" width="100" height="35" as="geometry"/>
-      </mxCell>
-    </leaf>
     <component label="Index" type="component" id="clon8">
       <mxCell style="shape=component;fillColor=#DCDCDC;" parent="binding_feature_component" vertex="1">
         <mxGeometry x="240" y="50" width="100" height="40" as="geometry"/>
@@ -134,21 +119,36 @@
         <mxGeometry x="570" y="50" width="100" height="40" as="geometry"/>
       </mxCell>
     </component>
-    <rel_leaf_component type="relation" id="21">
-      <mxCell parent="binding_feature_component" source="clon2" target="clon8" edge="1">
+    <concrete label="Index" type="concrete" selected="true" id="clon28">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="242" y="168" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="Product" type="concrete" selected="false" id="clon29">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="412" y="168" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="Product Star" type="concrete" selected="false" id="clon30">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="572" y="170" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <rel_concrete_component type="relation" id="34">
+      <mxCell edge="1" parent="binding_feature_component" source="clon28" target="clon8">
         <mxGeometry relative="1" as="geometry"/>
       </mxCell>
-    </rel_leaf_component>
-    <rel_leaf_component type="relation" id="22">
-      <mxCell parent="binding_feature_component" source="clon3" target="clon9" edge="1">
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="35">
+      <mxCell edge="1" parent="binding_feature_component" source="clon29" target="clon9">
         <mxGeometry relative="1" as="geometry"/>
       </mxCell>
-    </rel_leaf_component>
-    <rel_leaf_component type="relation" id="23">
-      <mxCell parent="binding_feature_component" source="clon4" target="clon10" edge="1">
+    </rel_concrete_component>
+    <rel_concrete_component type="relation" id="36">
+      <mxCell edge="1" parent="binding_feature_component" source="clon30" target="clon10">
         <mxGeometry relative="1" as="geometry"/>
       </mxCell>
-    </rel_leaf_component>
+    </rel_concrete_component>
     <mxCell id="istar" parent="0" visible="0"/>
     <mxCell id="classdiag" parent="0" visible="0"/>
     <mxCell id="adap_architecture" parent="0" visible="0"/>
